@@ -103,7 +103,7 @@ export class BillItemComponent implements OnInit {
     //this.array = ['nnkn','kdjfh'];
     this.tax = form.value.tax;
     this.paidAmount = form.value.paidAmount;
-    let reducingAmount = +this.tax + +this.paidAmount;
+    let reducingAmount = +this.paidAmount - +this.tax;
     this.balance = reducingAmount - total ;
 
     console.log(this.tax);
